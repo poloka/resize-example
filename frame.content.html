@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>iFrame message passing test</title>
+		<meta name="description" content="iFrame message passing test">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	    <link rel="stylesheet" media="all" href="/assets/foundation.css" />
+	    <meta content='width=100%, initial-scale=1, user-scalable=no' name='viewport'>
+
+	</head>
+	<body>
+    <div id='global-wrapper'>
+      <div class='orion-Layout'>
+        <div class='orion-Layout-main'>
+          
+          <div id='orion-Layout-main-content'>
+	<div id="ion-visit-list-content-panel" visit_list_patient_id="1316024" class="terraVM-ContentPanel content-panel content-panels-alternative content-panels-grouped ">
+		<header class="terraVM-Header bar">
+			<h1>Visit List</h1>
+		</header>
+		<div class="content-panel-inner">
+			<div class="content-panel-body pad-none">
+				<div>
+					<div id="ion-visit-list-timeline" class="orionViz-Timeline margin-sides" data-timeline-data="{&quot;datapoints&quot;:[[&quot;time-x&quot;,&quot;2015-10-03T19:21:00.000Z&quot;,&quot;2017-01-29T08:33:05.000Z&quot;],[&quot;time-y&quot;,0,0],[&quot;x&quot;,&quot;2015-12-03T06:00:00.000Z&quot;,&quot;2016-03-23T15:40:00.000Z&quot;,&quot;2016-03-24T17:44:00.000Z&quot;,&quot;2016-03-29T20:35:00.000Z&quot;,&quot;2016-03-30T15:38:00.000Z&quot;,&quot;2016-04-07T17:20:00.000Z&quot;],[&quot;y&quot;,0,0,0,0,0,0],[&quot;today-line-x&quot;,&quot;2016-11-29T21:54:05.963Z&quot;,&quot;2016-11-29T21:54:05.963Z&quot;],[&quot;today-line-y&quot;,-10,10]],&quot;popup_data&quot;:[{&quot;url&quot;:&quot;/patients/1316024/encounters/4950397/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null},{&quot;url&quot;:&quot;/patients/1316024/encounters/6024298/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null},{&quot;url&quot;:&quot;/patients/1316024/encounters/6038161/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null},{&quot;url&quot;:&quot;/patients/1316024/encounters/6090179/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null},{&quot;url&quot;:&quot;/patients/1316024/encounters/6097726/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null},{&quot;url&quot;:&quot;/patients/1316024/encounters/6188499/orion/visit&quot;,&quot;content&quot;:null,&quot;selector&quot;:null}],&quot;tick_formats&quot;:{&quot;full_date&quot;:&quot;%-m/%-d/%y&quot;,&quot;hour_only&quot;:&quot;%-I%p&quot;,&quot;short_time&quot;:&quot;%-I:%M%p&quot;,&quot;seconds_only&quot;:&quot;:%S&quot;,&quot;milliseconds_only&quot;:&quot;.%L&quot;},&quot;min_date&quot;:&quot;2015-10-03T19:21:00.000Z&quot;,&quot;max_date&quot;:&quot;2017-01-29T08:33:05.000Z&quot;,&quot;colors&quot;:[&quot;#0092E0&quot;,&quot;#0092E0&quot;,&quot;#FFCE3B&quot;]}"></div>
+					<ul data-terra-responsive-element="true" class="terraVM-List list-divided-tight list-selectable">
+						<li class="selection-static">
+							<header id="ion-visit-list-future-header" class="terraVM-Header bar terraVM-SubsectionHeader" vm-selectable="false">
+								<h1>Future</h1>
+							</header>
+						</li>
+						<li class="selection-static">
+							<div class="terraVM-NoData-md" data-reactroot="" data-reactid="1" data-react-checksum="1047213844">
+								<p class="terraVM-NoData-heading" data-reactid="2">No future visits for this patient</p>
+							</div>
+						</li>
+						<li class="selection-static">
+							<header id="ion-visit-list-previous-header" class="terraVM-Header bar terraVM-SubsectionHeader" vm-selectable="false">
+								<h1>Previous</h1>
+							</header>
+						</li>
+						<li class="terraVM-u-chevron">
+							<div class="ion-visit-list-item js-navigator-discloseDetailTrigger terraVM-ResponsiveModel terraVM-ResponsiveModel--element" visit_list_encounter_id="6188499" vm-selectable="true" data-nav-content-url="/patients/1316024/encounters/6188499/orion/visit" data-nav-add-close-button="true" data-terra-responsive-element="true" data-terra-js-mq-sizes="xxs">
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="xxs xs sm md">
+									<div class="terraVM-CompactCard terraVM-CompactCard--twoColumns terraVM-CompactCard--defaultTheme terraVM-CompactCard--accessoryAlignCenter terraVM-CompactCard--truncated">
+										<div class="terraVM-CompactCard-body">
+											<div class="terraVM-CompactCard-rowContainer">
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Apr  7, 2016  5:20 PM</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Inpatient</div>
+													</div>
+												</div>
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">--</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Foo, Bar</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="lg xl xxl">
+									<div class="terraVM-TableCard terraVM-TableCard--truncated">
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Apr  7, 2016  5:20 PM</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Inpatient</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">--</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Foo, Bar</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="terraVM-u-chevron">
+							<div class="ion-visit-list-item js-navigator-discloseDetailTrigger terraVM-ResponsiveModel terraVM-ResponsiveModel--element" visit_list_encounter_id="6097726" vm-selectable="true" data-nav-content-url="/patients/1316024/encounters/6097726/orion/visit" data-nav-add-close-button="true" data-terra-responsive-element="true" data-terra-js-mq-sizes="xxs">
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="xxs xs sm md">
+									<div class="terraVM-CompactCard terraVM-CompactCard--twoColumns terraVM-CompactCard--defaultTheme terraVM-CompactCard--accessoryAlignCenter terraVM-CompactCard--truncated">
+										<div class="terraVM-CompactCard-body">
+											<div class="terraVM-CompactCard-rowContainer">
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Mar 30, 2016  3:38 PM</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Inpatient</div>
+													</div>
+												</div>
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">--</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Baz, Bar</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="lg xl xxl">
+									<div class="terraVM-TableCard terraVM-TableCard--truncated">
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Mar 30, 2016  3:38 PM</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Inpatient</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">--</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Baz, Bar</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="terraVM-u-chevron">
+							<div class="ion-visit-list-item js-navigator-discloseDetailTrigger terraVM-ResponsiveModel terraVM-ResponsiveModel--element" visit_list_encounter_id="6090179" vm-selectable="true" data-nav-content-url="/patients/1316024/encounters/6090179/orion/visit" data-nav-add-close-button="true" data-terra-responsive-element="true" data-terra-js-mq-sizes="xxs">
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="xxs xs sm md">
+									<div class="terraVM-CompactCard terraVM-CompactCard--twoColumns terraVM-CompactCard--defaultTheme terraVM-CompactCard--accessoryAlignCenter terraVM-CompactCard--truncated">
+										<div class="terraVM-CompactCard-body">
+											<div class="terraVM-CompactCard-rowContainer">
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Mar 29, 2016  8:35 PM</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">Inpatient</div>
+													</div>
+												</div>
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">--</div>
+													</div>
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">FooBar, Baz</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="lg xl xxl">
+									<div class="terraVM-TableCard terraVM-TableCard--truncated">
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Mar 29, 2016  8:35 PM</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">Inpatient</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">--</div>
+										</div>
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">FooBar, Baz</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="terraVM-u-chevron">
+							<div id="ion-visit-list-view-more" vm-selectable="true" class="js-navigator-showPageTrigger terraVM-ResponsiveModel terraVM-ResponsiveModel--element" data-nav-content-url="/patients/1316024/orion/visit-list" data-terra-responsive-element="true" data-terra-js-mq-sizes="xxs">
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="xxs xs sm md">
+									<div class="terraVM-CompactCard terraVM-CompactCard--twoColumns terraVM-CompactCard--defaultTheme terraVM-CompactCard--accessoryAlignCenter terraVM-CompactCard--truncated">
+										<div class="terraVM-CompactCard-body">
+											<div class="terraVM-CompactCard-rowContainer">
+												<div class="terraVM-CompactCard-row">
+													<div class="terraVM-CompactCard-content">
+														<div class="terraVM-CompactCard-text">View More...</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="terraVM-ResponsiveModel-container" data-rm-sizes="lg xl xxl">
+									<div class="terraVM-TableCard terraVM-TableCard--truncated">
+										<div class="terraVM-TableCard-content terraVM-TableCard-content--medium">
+											<div class="terraVM-TableCard-text">View More...</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+      </div>
+      <script src="/assets/iframeResizer.contentWindow.js"></script>
+
+    </div>
+		<script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js" defer></script>
+	</body>
+</html>
