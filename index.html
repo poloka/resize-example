@@ -26,7 +26,8 @@
 		<![endif]-->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/iframeResizer.min.js"></script>
+		<!-- <script type="text/javascript" src="../js/iframeResizer.min.js"></script> -->
+		<script type="text/javascript" src="../js/iframeResizer.js"></script>
 		<script type="text/javascript">
 
 			/*
@@ -39,6 +40,9 @@
 			 */
 
 			iFrameResize({
+				heightCalculationMethod : 'taggedElement',
+				maxHeight               : 300,
+				scrolling               : true,
 				log                     : true,                  // Enable console logging
 				inPageLinks             : true,
 				resizedCallback         : function(messageData){ // Callback fn when resize is received
